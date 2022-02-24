@@ -1,0 +1,41 @@
+{
+  "productList": [
+    {
+      "pname": "banana",
+      "pstatus": "Excellent",
+      "pdate": "2022-02-08T22:00:00.000Z",
+      "pprice": 6,
+      "pcategory": "Fruits",
+      "pdescription": "1 ripe yellow banana",
+      "id": 1
+    },
+    {
+      "pname": "pencil",
+      "pstatus": "Good",
+      "pdate": "2022-02-23T22:00:00.000Z",
+      "pprice": 3,
+      "pcategory": "Stationary",
+      "pdescription": "Big green and yellow pencil",
+      "id": 2
+    },
+    {
+      "pname": "pillow",
+      "pstatus": "Supurb",
+      "pdate": "2022-04-20T22:00:00.000Z",
+      "pprice": 45,
+      "pcategory": "Bedroom",
+      "pdescription": "Big fluffy pillow",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
