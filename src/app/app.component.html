@@ -20,41 +20,52 @@
     <div class="mat-elevation-z8">
       <table mat-table [dataSource]="dataSource" matSort>
 
-        <!-- ID Column -->
+
         <ng-container matColumnDef="pname">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Product Name </th>
           <td mat-cell *matCellDef="let row"> {{row.pname}} </td>
         </ng-container>
 
-        <!-- Progress Column -->
+
         <ng-container matColumnDef="pstate">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> State </th>
           <td mat-cell *matCellDef="let row"> {{row.pstate}}</td>
         </ng-container>
 
-        <!-- Name Column -->
+
         <ng-container matColumnDef="pdate">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Date </th>
           <td mat-cell *matCellDef="let row"> {{row.pdate | date}} </td>
         </ng-container>
 
-        <!-- Fruit Column -->
         <ng-container matColumnDef="pprice">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Price </th>
           <td mat-cell *matCellDef="let row"> {{row.pprice | currency}} </td>
         </ng-container>
 
-        <!-- Fruit Column -->
         <ng-container matColumnDef="pcategory">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Category </th>
           <td mat-cell *matCellDef="let row"> {{row.pcategory}} </td>
         </ng-container>
 
 
-        <!-- Fruit Column -->
         <ng-container matColumnDef="pdescription">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Desription </th>
           <td mat-cell *matCellDef="let row"> {{row.pdescription}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="action">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Action </th>
+          <td mat-cell *matCellDef="let row">
+            <button mat-icon-button color="primary" (click)="editProduct(row)">
+              <mat-icon>edit</mat-icon>
+            </button>
+
+            <button mat-icon-button color="warn">
+              <mat-icon>delete</mat-icon>
+            </button>
+
+          </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
