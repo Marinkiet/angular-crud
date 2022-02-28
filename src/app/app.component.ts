@@ -28,6 +28,10 @@ export class AppComponent implements OnInit {
   openDialog() {
     this.dialog.open(DialogComponent, {
       width: '30%'
+    }).afterClosed().subscribe(val =>{
+      if(val ==='Saved'){
+        this.getAllProducts();
+      }
     });
   }
   getAllProducts() {
@@ -44,11 +48,15 @@ export class AppComponent implements OnInit {
       })
   }
   editProduct(row: any) {
-    this.dialog.open(DialogComponent), {
+    this.dialog.open(DialogComponent, {
       width: '30%',
       data: row,
 
-    }
+    }).afterClosed().subscribe(val =>{
+      if(val ==='Updated'){
+        this.getAllProducts();
+      }
+    });
   }
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
@@ -58,4 +66,18 @@ export class AppComponent implements OnInit {
       this.dataSource.paginator.firstPage();
     }
   }
+  deleteProduct(id:number){
+    this.api.deletePriduct(id)
+    .subscribe({
+      next:(res)=>{
+        alert('Product Deleted Successfully');
+        this.getAllProducts();
+
+      },error:()=>{
+        alert('Error while Deleting Product');
+
+      }
+      })
+    }
+  
 }

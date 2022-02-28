@@ -2,30 +2,21 @@
   "productList": [
     {
       "pname": "banana",
-      "pstatus": "Excellent",
+      "pstate": "Supurb",
       "pdate": "2022-02-08T22:00:00.000Z",
       "pprice": 6,
       "pcategory": "Fruits",
-      "pdescription": "1 ripe yellow banana",
+      "pdescription": "6 ripe yellow bananas",
       "id": 1
     },
     {
       "pname": "pencil",
-      "pstatus": "Good",
+      "pstate": "Excellent",
       "pdate": "2022-02-23T22:00:00.000Z",
-      "pprice": 3,
+      "pprice": 35,
       "pcategory": "Stationary",
-      "pdescription": "Big green and yellow pencil",
+      "pdescription": "15 green and yellow pencil",
       "id": 2
-    },
-    {
-      "pname": "pillow",
-      "pstatus": "Supurb",
-      "pdate": "2022-04-20T22:00:00.000Z",
-      "pprice": 45,
-      "pcategory": "Bedroom",
-      "pdescription": "Big fluffy pillow",
-      "id": 3
     },
     {
       "pname": "JVC TRUCK",
@@ -35,15 +26,6 @@
       "pcategory": "Toys",
       "pdescription": "Yellow jvc boys truck ",
       "id": 4
-    },
-    {
-      "pname": "Pen",
-      "pstatus": "Excellent",
-      "pdate": "2022-02-09T22:00:00.000Z",
-      "pprice": 89,
-      "pcategory": "Stationary",
-      "pdescription": "Blue Pen",
-      "id": 5
     },
     {
       "pname": "Spoons",
@@ -62,6 +44,42 @@
       "pcategory": "Veggies",
       "pdescription": "String beans",
       "id": 7
+    },
+    {
+      "pname": "rice",
+      "pstate": "Excellent",
+      "pdate": "2022-02-17T22:00:00.000Z",
+      "pprice": 450,
+      "pcategory": "Kitchen",
+      "pdescription": "brown rice 10kg",
+      "id": 8
+    },
+    {
+      "pname": "JVC TRUCK",
+      "pstate": "Excellent",
+      "pdate": "2022-02-10T22:00:00.000Z",
+      "pprice": 500,
+      "pcategory": "Toys",
+      "pdescription": "Yellow jvc boys truck ",
+      "id": 9
+    },
+    {
+      "pname": "banana",
+      "pstate": "Good",
+      "pdate": "2022-02-08T22:00:00.000Z",
+      "pprice": 6,
+      "pcategory": "Fruits",
+      "pdescription": "1 ripe yellow banana",
+      "id": 10
+    },
+    {
+      "pname": "Duvet",
+      "pstate": "Supurb",
+      "pdate": "2022-02-03T22:00:00.000Z",
+      "pprice": 500,
+      "pcategory": "Bedroom",
+      "pdescription": "Boys blue rocket duvet cover",
+      "id": 11
     }
   ],
   "comments": [

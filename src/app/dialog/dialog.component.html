@@ -43,10 +43,11 @@
       <mat-label>Product Description</mat-label>
       <textarea formControlName="pdescription" matInput></textarea>
     </mat-form-field>
+    
   </form>
   <div mat-dialog-action [align]="'end'">
     <button mat-raised-button color="warn" mat-dialog-close="">Close</button>
-    <button (click)="saveProduct()" style="margin-left:10px" mat-raised-button color="primary">Save</button>
+    <button (click)="saveProduct()" style="margin-left:10px" mat-raised-button color="primary">{{actionBtn}}</button>
 
   </div>
 </div>
